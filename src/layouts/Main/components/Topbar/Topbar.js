@@ -4,7 +4,14 @@ import clsx from 'clsx';
 
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
-import { AppBar, Toolbar, Badge, Hidden, IconButton,Typography } from '@material-ui/core';
+import {
+  AppBar,
+  Toolbar,
+  Badge,
+  Hidden,
+  IconButton,
+  Typography
+} from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
 import InputIcon from '@material-ui/icons/Input';
@@ -29,45 +36,32 @@ const Topbar = props => {
   const [notifications] = useState([]);
 
   return (
-    <AppBar
-      {...rest}
-      className={clsx(classes.root, className)}
-    >
+    <AppBar {...rest} className={clsx(classes.root, className)}>
       <Toolbar>
-      <Typography color='white' variant="h2">
-              TRUCKING MANAGEMENT SYSTEM
+        <Typography color="white" variant="h2" color="inherit">
+          TRUCKING MANAGEMENT SYSTEM
         </Typography>
-        {/* /<RouterLink to="/"> */}
-          {/* <img
-            alt="Logo"
-            src="/images/logos/logo--white.svg"
-          /> */}
-        {/* </RouterLink>  */}
+
         <div className={classes.flexGrow} />
         <Hidden mdDown>
           <IconButton color="inherit">
             <Badge
               badgeContent={notifications.length}
-              color="primary"
-              variant="dot"
-            >
+              color="inherit"
+              variant="dot">
               <NotificationsIcon />
             </Badge>
           </IconButton>
-          <RouterLink to="/sign-in"> 
-          <IconButton
-            className={classes.signOutButton}
-            color="inherit"
-          >
-            <InputIcon />
-          </IconButton>
-          </RouterLink>
+            <IconButton
+              className={classes.signOutButton}
+              color="inherit"
+              href= "/"
+              variant="dot">
+              <InputIcon />
+            </IconButton>
         </Hidden>
         <Hidden lgUp>
-          <IconButton
-            color="inherit"
-            onClick={onSidebarOpen}
-          >
+          <IconButton color="inherit" onClick={onSidebarOpen}>
             <MenuIcon />
           </IconButton>
         </Hidden>

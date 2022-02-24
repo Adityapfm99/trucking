@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
   },
   inner: {
     minWidth: 1050
-  },
+},
   nameContainer: {
     display: 'flex',
     alignItems: 'center'

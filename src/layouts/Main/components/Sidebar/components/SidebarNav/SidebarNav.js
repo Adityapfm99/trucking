@@ -50,16 +50,16 @@ const CustomRouterLink = forwardRef((props, ref) => (
 ));
 
 const SidebarNav = props => {
-  const { pages, className, ...rest } = props;
+  const { pages,index, className, ...rest } = props;
 
   const classes = useStyles();
-
+  
   return (
     <List
       {...rest}
       className={clsx(classes.root, className)}
     >
-      {pages.map(page => (
+      {pages.map((page,index) => (
         <ListItem
           className={classes.item}
           disableGutters

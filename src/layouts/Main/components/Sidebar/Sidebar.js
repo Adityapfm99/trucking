@@ -52,7 +52,19 @@ const Sidebar = props => {
     {
       title: 'Monitoring',
       href: '/users',
-      icon: <MonitoringIcon />
+      icon: <MonitoringIcon/>,
+      children: [
+                  {
+                    title: 'Credentials',
+                    Icon:<DashboardIcon />,
+                    href: '/users',
+                  },
+                  {
+                    title: '2-FA',
+                    Icon: <DashboardIcon />,
+                    href: '/users',
+                  },
+      ],
     },
     {
       title: 'Users',
@@ -109,7 +121,6 @@ const Sidebar = props => {
           className={classes.nav}
           pages={pages}
         />
-        <UpgradePlan />
       </div>
     </Drawer>
   );
