@@ -66,7 +66,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundImage: 'url(/images/auth.jpg)',
+    backgroundImage: 'url(/images/scania.jpg)',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center'
@@ -205,7 +205,7 @@ const SignUp = props => {
           lg={5}
         >
           <div className={classes.quote}>
-            <div className={classes.quoteInner}>
+            {/* <div className={classes.quoteInner}>
               <Typography
                 className={classes.quoteText}
                 variant="h1"
@@ -227,7 +227,7 @@ const SignUp = props => {
                   Manager at inVision
                 </Typography>
               </div>
-            </div>
+            </div> */}
           </div>
         </Grid>
         <Grid
