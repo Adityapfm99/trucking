@@ -28,10 +28,17 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const UsersToolbar = props => {
-  const { className, ...rest } = props;
+const VehiclesToolbar = props => {
+  const { className,history, ...rest } = props;
 
   const classes = useStyles();
+  // const { history } = props;
+
+  const addVehicle = event => {
+    console.log(event)
+    event.preventDefault();
+    props.history.push('/dashboard');
+};
 
   return (
     <div
@@ -40,27 +47,38 @@ const UsersToolbar = props => {
     >
       <div className={classes.row}>
         <span className={classes.spacer} />
-        {/* <Button className={classes.importButton}>Import</Button>
+        <Button
+          color="secondary"
+          variant="contained"
+        >
+          Edit vehicle
+        </Button>
+        
+        <Button className={classes.importButton}>Import</Button>
         <Button className={classes.exportButton}>Export</Button>
+       
         <Button
           color="primary"
           variant="contained"
+          href = '/addVehicle'
         >
-          Add user
-        </Button> */}
+          Add vehicle
+        </Button>
       </div>
       <div className={classes.row}>
         <SearchInput
           className={classes.searchInput}
           placeholder="Search vehicle"
         />
+        
       </div>
     </div>
   );
 };
 
-UsersToolbar.propTypes = {
-  className: PropTypes.string
+VehiclesToolbar.propTypes = {
+  className: PropTypes.string,
+  history: PropTypes.object
 };
 
-export default UsersToolbar;
+export default VehiclesToolbar;

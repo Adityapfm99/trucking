@@ -57,7 +57,7 @@ const Topbar = props => {
               color="inherit"
               href= "/"
               variant="dot">
-              <InputIcon />
+              <InputIcon /> 
             </IconButton>
         </Hidden>
         <Hidden lgUp>

@@ -14,7 +14,9 @@ import {
   Settings as SettingsView,
   SignUp as SignUpView,
   SignIn as SignInView,
-  NotFound as NotFoundView
+  NotFound as NotFoundView,
+  VehicleList as VehicleTableView,
+  addVehicle as AddVehicleView
 } from './views';
 
 const Routes = () => {
@@ -35,7 +37,7 @@ const Routes = () => {
         component={UserListView}
         exact
         layout={MainLayout}
-        path="/users"
+        path="/monitoringVehicle"
       />
       <RouteWithLayout
         component={ProductListView}
@@ -66,6 +68,18 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/settings"
+      />
+       <RouteWithLayout
+        component={VehicleTableView}
+        exact
+        layout={MainLayout}
+        path="/masterVehicle"
+      />
+      <RouteWithLayout
+        component={AddVehicleView}
+        exact
+        layout={MainLayout}
+        path="/addVehicle"
       />
       <RouteWithLayout
         component={SignUpView}

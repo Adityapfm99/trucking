@@ -60,9 +60,9 @@ const TasksProgress = props => {
               gutterBottom
               variant="body2"
             >
-              TASKS PROGRESS
+              TOTAL PAYLOADS
             </Typography>
-            <Typography variant="h3">75.5%</Typography>
+            <Typography variant="h3">2.100 Ton</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
@@ -70,11 +70,11 @@ const TasksProgress = props => {
             </Avatar>
           </Grid>
         </Grid>
-        <LinearProgress
+        {/* <LinearProgress
           className={classes.progress}
           value={75.5}
           variant="determinate"
-        />
+        /> */}
       </CardContent>
     </Card>
   );

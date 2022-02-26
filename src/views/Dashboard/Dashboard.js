@@ -10,7 +10,9 @@ import {
   LatestSales,
   UsersByDevice,
   LatestProducts,
-  LatestOrders
+  LatestOrders,
+  MonitoringPayload,
+  MonitoringFuel
 } from './components';
 
 const useStyles = makeStyles(theme => ({
@@ -28,7 +30,7 @@ const Dashboard = () => {
         container
         spacing={5}
       >
-        {/* <Grid
+        {<Grid
           item
           lg={3}
           sm={6}
@@ -36,8 +38,8 @@ const Dashboard = () => {
           xs={12}
         >
           <Budget />
-        </Grid> */}
-        {/* <Grid
+        </Grid> }
+        {<Grid
           item
           lg={3}
           sm={6}
@@ -45,8 +47,8 @@ const Dashboard = () => {
           xs={12}
         >
           <TotalUsers />
-        </Grid> */}
-        {/* <Grid
+        </Grid> }
+        {<Grid
           item
           lg={3}
           sm={6}
@@ -54,8 +56,8 @@ const Dashboard = () => {
           xs={12}
         >
           <TasksProgress />
-        </Grid> */}
-        {/* <Grid
+        </Grid> }
+        {<Grid
           item
           lg={3}
           sm={6}
@@ -63,7 +65,7 @@ const Dashboard = () => {
           xs={12}
         >
           <TotalProfit />
-        </Grid> */}
+        </Grid> }
         <Grid
           item
           lg={8}
@@ -71,7 +73,7 @@ const Dashboard = () => {
           xl={9}
           xs={12}
         >
-          <LatestSales />
+          <MonitoringFuel />
         </Grid>
         <Grid
           item
@@ -82,7 +84,7 @@ const Dashboard = () => {
         >
           <UsersByDevice />
         </Grid>
-        <Grid
+        {/* <Grid
           item
           lg={4}
           md={6}
@@ -90,7 +92,7 @@ const Dashboard = () => {
           xs={12}
         >
           <LatestProducts />
-        </Grid>
+        </Grid> */}
         <Grid
           item
           lg={8}
@@ -98,7 +100,7 @@ const Dashboard = () => {
           xl={9}
           xs={12}
         >
-          <LatestOrders />
+          <MonitoringPayload />
         </Grid>
       </Grid>
     </div>

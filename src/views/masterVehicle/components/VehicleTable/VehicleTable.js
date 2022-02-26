@@ -41,47 +41,47 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const UsersTable = props => {
-  const { className, users, ...rest } = props;
+const VehicleTable = props => {
+  const { className, vehicles, ...rest } = props;
 
   const classes = useStyles();
 
-  const [selectedUsers, setSelectedUsers] = useState([]);
+  const [selectedVehicles, setSelectedVehicles] = useState([]);
   const [rowsPerPage, setRowsPerPage] = useState(10);
   const [page, setPage] = useState(0);
 
   const handleSelectAll = event => {
-    const { users } = props;
+    const { vehicles } = props;
 
-    let selectedUsers;
+    let selectedVehicles;
 
     if (event.target.checked) {
-      selectedUsers = users.map(user => user.id);
+      selectedVehicles = vehicles.map(vehicle => vehicle.id);
     } else {
-      selectedUsers = [];
+      selectedVehicles = [];
     }
 
-    setSelectedUsers(selectedUsers);
+    setSelectedVehicles(selectedVehicles);
   };
 
   const handleSelectOne = (event, id) => {
-    const selectedIndex = selectedUsers.indexOf(id);
-    let newSelectedUsers = [];
+    const selectedIndex = selectedVehicles.indexOf(id);
+    let newSelectedVehicles = [];
 
     if (selectedIndex === -1) {
-      newSelectedUsers = newSelectedUsers.concat(selectedUsers, id);
+      newSelectedVehicles = newSelectedVehicles.concat(selectedVehicles, id);
     } else if (selectedIndex === 0) {
-      newSelectedUsers = newSelectedUsers.concat(selectedUsers.slice(1));
-    } else if (selectedIndex === selectedUsers.length - 1) {
-      newSelectedUsers = newSelectedUsers.concat(selectedUsers.slice(0, -1));
+      newSelectedVehicles = newSelectedVehicles.concat(selectedVehicles.slice(1));
+    } else if (selectedIndex === selectedVehicles.length - 1) {
+      newSelectedVehicles = newSelectedVehicles.concat(selectedVehicles.slice(0, -1));
     } else if (selectedIndex > 0) {
-      newSelectedUsers = newSelectedUsers.concat(
-        selectedUsers.slice(0, selectedIndex),
-        selectedUsers.slice(selectedIndex + 1)
+      newSelectedVehicles = newSelectedVehicles.concat(
+        selectedVehicles.slice(0, selectedIndex),
+        selectedVehicles.slice(selectedIndex + 1)
       );
     }
 
-    setSelectedUsers(newSelectedUsers);
+    setSelectedVehicles(newSelectedVehicles);
   };
 
   const handlePageChange = (event, page) => {
@@ -103,57 +103,57 @@ const UsersTable = props => {
             <Table>
               <TableHead>
                 <TableRow>
-                  {/* <TableCell padding="checkbox">
+                <TableCell padding="checkbox">
                     <Checkbox
-                      checked={selectedUsers.length === users.length}
+                      checked={selectedVehicles.length === vehicles.length}
                       color="primary"
                       indeterminate={
-                        selectedUsers.length > 0 &&
-                        selectedUsers.length < users.length
+                        selectedVehicles.length > 0 &&
+                        selectedVehicles.length < vehicles.length
                       }
                       onChange={handleSelectAll}
                     />
-                  </TableCell> */}
+                     </TableCell>
                   <TableCell>VEHICLE NAME</TableCell>
                   <TableCell>LICENSE PLATE</TableCell>
-                  <TableCell>FIRST SYNC</TableCell>
-                  <TableCell>DURATION</TableCell>
-                  <TableCell>LAST SYNC</TableCell>
-                  <TableCell>LIVE TRACKING</TableCell>
+                  <TableCell>STATUS</TableCell>
+                  <TableCell>EXPEDITION</TableCell>
+                  <TableCell>PIC NAME</TableCell>
+                  <TableCell>SENSOR LOAD</TableCell>
+                  <TableCell>SENSOR FUEL</TableCell>
+                  <TableCell>SENSOR TANK</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
-                {users.slice(0, rowsPerPage).map(user => (
+                {vehicles.slice(0, rowsPerPage).map(vehicle => (
                   <TableRow
                     className={classes.tableRow}
                     hover
-                    key={user.id}
-                    selected={selectedUsers.indexOf(user.id) !== -1}
+                    key={vehicle.id}
+                    selected={selectedVehicles.indexOf(vehicle.id) !== -1}
                   >
-                    {/* <TableCell padding="checkbox">
+                      <TableCell padding="checkbox">
                       <Checkbox
-                        checked={selectedUsers.indexOf(user.id) !== -1}
+                        checked={selectedVehicles.indexOf(vehicle.id) !== -1}
                         color="primary"
-                        onChange={event => handleSelectOne(event, user.id)}
+                        onChange={event => handleSelectOne(event, vehicle.id)}
                         value="true"
                       />
-                    </TableCell> */}
+                    </TableCell>
+                   
                     <TableCell>
                       <div className={classes.nameContainer}>
-                        {/* <Avatar
-                          className={classes.avatar}
-                          src={user.avatarUrl}
-                        >
-                          {getInitials(user.vehicleName)}
-                        </Avatar> */}
-                        <Typography variant="body1">{user.VehicleName}</Typography>
+                       
+                        <Typography variant="body1">{vehicle.VehicleName}</Typography>
                       </div>
                     </TableCell>
-                    <TableCell>{user.LicensePlate}</TableCell>
-                    <TableCell>{user.FirstSync}</TableCell>
-                    <TableCell>{user.Duration}</TableCell>
-                    <TableCell>{user.LastSync}</TableCell>
-                    <TableCell>{user.LiveTracking}</TableCell>
+                    <TableCell>{vehicle.licensePlate}</TableCell>
+                    <TableCell>{vehicle.status}</TableCell>
+                    <TableCell>{vehicle.expedition}</TableCell>
+                    <TableCell>{vehicle.picName}</TableCell>
+                    <TableCell>{vehicle.sensorLoad}</TableCell>
+                    <TableCell>{vehicle.sensorFuel}</TableCell>
+                    <TableCell>{vehicle.sensorTank}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -164,7 +164,7 @@ const UsersTable = props => {
       <CardActions className={classes.actions}>
         <TablePagination
           component="div"
-          count={users.length}
+          count={vehicles.length}
           onChangePage={handlePageChange}
           onChangeRowsPerPage={handleRowsPerPageChange}
           page={page}
@@ -176,9 +176,9 @@ const UsersTable = props => {
   );
 };
 
-UsersTable.propTypes = {
+VehicleTable.propTypes = {
   className: PropTypes.string,
   vehicle: PropTypes.array.isRequired
 };
 
-export default UsersTable;
+export default VehicleTable;

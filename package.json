@@ -1,9 +1,8 @@
 {
-  "name": "react-material-dashboard",
-  "author": "DeviasIO",
-  "email": "contact@devias.io",
+  "name": "trucking",
+  "author": "aditya nugraha",
   "licence": "MIT",
-  "version": "0.3.0",
+  "version": "0.0.1",
   "private": false,
   "scripts": {
     "start": "react-scripts start",

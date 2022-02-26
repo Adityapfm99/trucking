@@ -61,10 +61,10 @@ const Budget = props => {
               color="textSecondary"
               gutterBottom
               variant="body2"
-            >
-              BUDGET
+            > 
+              COST FUELS
             </Typography>
-            <Typography variant="h3">$24,000</Typography>
+            <Typography variant="h3">IDR 20.000.000</Typography>
           </Grid>
           <Grid item>
             <Avatar className={classes.avatar}>
@@ -84,7 +84,7 @@ const Budget = props => {
             className={classes.caption}
             variant="caption"
           >
-            Since last month
+            Since last week
           </Typography>
         </div>
       </CardContent>

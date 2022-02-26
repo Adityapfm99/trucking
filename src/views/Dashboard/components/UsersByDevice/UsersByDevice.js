@@ -14,7 +14,11 @@ import {
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import RefreshIcon from '@material-ui/icons/Refresh';
+// BatteryAlertTwoTone
+import Build from '@material-ui/icons/Build';
+import Check from '@material-ui/icons/Check';
 import TabletMacIcon from '@material-ui/icons/TabletMac';
+import { BurstMode, LaptopChromebook } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -47,7 +51,7 @@ const UsersByDevice = props => {
   const data = {
     datasets: [
       {
-        data: [63, 15, 22],
+        data: [85, 15],
         backgroundColor: [
           theme.palette.primary.main,
           theme.palette.error.main,
@@ -58,7 +62,7 @@ const UsersByDevice = props => {
         hoverBorderColor: theme.palette.white
       }
     ],
-    labels: ['Desktop', 'Tablet', 'Mobile']
+    labels: ['Active', 'Broken']
   };
 
   const options = {
@@ -85,23 +89,18 @@ const UsersByDevice = props => {
 
   const devices = [
     {
-      title: 'Desktop',
-      value: '63',
-      icon: <LaptopMacIcon />,
+      title: 'Active',
+      value: '85',
+      icon: <Check />,
       color: theme.palette.primary.main
     },
     {
-      title: 'Tablet',
+      title: 'Broken',
       value: '15',
-      icon: <TabletMacIcon />,
+      icon: < Build/>,
       color: theme.palette.error.main
     },
-    {
-      title: 'Mobile',
-      value: '23',
-      icon: <PhoneIphoneIcon />,
-      color: theme.palette.warning.main
-    }
+   
   ];
 
   return (
@@ -115,7 +114,7 @@ const UsersByDevice = props => {
             <RefreshIcon />
           </IconButton>
         }
-        title="Users By Device"
+        title="Status Vehicle"
       />
       <Divider />
       <CardContent>

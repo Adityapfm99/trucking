@@ -50,8 +50,8 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundImage: 'url(/images/authNew.jpg)',
-    backgroundSize: 'cover',
+    backgroundImage: 'url(/images/scania.jpg)',
+    backgroundSize: 'auto',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center'
   },
@@ -74,7 +74,9 @@ const useStyles = makeStyles(theme => ({
   content: {
     height: '100%',
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    weight:'1px',
+   
   },
   contentHeader: {
     display: 'flex',
@@ -94,6 +96,11 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down('md')]: {
       justifyContent: 'center'
     }
+  },
+  verticleLine: {
+    height: '100%',
+    width: 1,
+    backgroundColor: '#909090',
   },
   form: {
     paddingLeft: 100,
@@ -187,7 +194,7 @@ const SignIn = props => {
         <Grid
           className={classes.quoteContainer}
           item
-          lg={5}
+          lg={4}
         >
           <div className={classes.quote}>
             <div className={classes.quoteInner}>
@@ -232,6 +239,14 @@ const SignIn = props => {
                 className={classes.form}
                 onSubmit={handleSignIn}
               >
+                 <Typography
+                  className={classes.title}
+                  variant="h1"
+                  align="center"
+                  width="100%"
+                >
+                  Trucking Mangement System
+                </Typography>
                 <Typography
                   className={classes.title}
                   variant="h2"
@@ -247,9 +262,9 @@ const SignIn = props => {
                 <Grid
                   className={classes.socialButtons}
                   container
-                  spacing={20}
+                  spacing={40}
                 >
-                  {/* <Grid item>
+                  <Grid item>
                     <Button
                       color="primary"
                       onClick={handleSignIn}
@@ -269,7 +284,7 @@ const SignIn = props => {
                       <GoogleIcon className={classes.socialIcon} />
                       Login with Google
                     </Button>
-                  </Grid> */}
+                  </Grid>
                 </Grid>
                 <Typography
                   align="center"
@@ -316,7 +331,7 @@ const SignIn = props => {
                   type="submit"
                   variant="contained"
                 >
-                  Sign in now
+                  Login
                 </Button>
                 <Typography
                   color="textSecondary"

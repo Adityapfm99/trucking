@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
 
-import { Notifications, Password } from './components';
+import { AddVehicle } from './components';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Settings = () => {
+const Add = () => {
   const classes = useStyles();
 
   return (
@@ -21,21 +21,25 @@ const Settings = () => {
       >
         {/* <Grid
           item
-          md={7}
+          lg={4}
+          md={6}
+          xl={4}
           xs={12}
         > */}
-          {/* <Notifications /> */}
+          {/* <AccountProfile /> */}
         </Grid>
         <Grid
           item
-          md={5}
+          lg={8}
+          md={6}
+          xl={8}
           xs={12}
         >
-          <Password />
-        {/* </Grid> */}
-      </Grid>
+          <AddVehicle />
+        </Grid>
+      {/* </Grid> */}
     </div>
   );
 };
 
-export default Settings;
+export default Add;

@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
-import { Divider, Drawer } from '@material-ui/core';
+import { CardActions, Divider, Drawer } from '@material-ui/core';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import PeopleIcon from '@material-ui/icons/People';
 import MonitoringIcon from '@material-ui/icons/MovieCreationTwoTone';
@@ -14,6 +14,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 
 import { Profile, SidebarNav, UpgradePlan } from './components';
+import { Assessment, Commute, Equalizer, EvStation, LocalShipping } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
   drawer: {
@@ -50,32 +51,31 @@ const Sidebar = props => {
       icon: <DashboardIcon />
     },
     {
-      title: 'Monitoring',
-      href: '/users',
-      icon: <MonitoringIcon/>,
-      children: [
-                  {
-                    title: 'Credentials',
-                    Icon:<DashboardIcon />,
-                    href: '/users',
-                  },
-                  {
-                    title: '2-FA',
-                    Icon: <DashboardIcon />,
-                    href: '/users',
-                  },
-      ],
+      title: 'Monitoring Vehicle',
+      href: '/monitoringVehicle',
+      icon: <LocalShipping/>,
+    
     },
     {
-      title: 'Users',
-      href: '/users',
-      icon: <PeopleIcon />
+      title: 'Monitoring payload',
+      // href: '/users',
+      icon: <Assessment />
     },
     {
-      title: 'Products',
-      href: '/products',
-      icon: <ShoppingBasketIcon />
+      title: 'Monitoring Fuel',
+      // href: '/users',
+      icon: <EvStation />
     },
+    {
+      title: 'Master Vehicle',
+      href: '/masterVehicle',
+      icon: <Commute />
+    },
+    // { 
+    //   title: 'Products',
+    //   href: '/products',
+    //   icon: <ShoppingBasketIcon />
+    // },
     // {
     //   title: 'Authentication',
     //   href: '/sign-in',
@@ -91,13 +91,13 @@ const Sidebar = props => {
     //   href: '/icons',
     //   icon: <ImageIcon />
     // },
+    // {
+    //   title: 'Account',
+    //   href: '/account',
+    //   icon: <AccountBoxIcon />
+    // },
     {
-      title: 'Account',
-      href: '/account',
-      icon: <AccountBoxIcon />
-    },
-    {
-      title: 'Settings',
+      title: 'Change Password',
       href: '/settings',
       icon: <SettingsIcon />
     }
