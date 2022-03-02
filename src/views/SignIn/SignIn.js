@@ -259,7 +259,7 @@ const SignIn = props => {
                   gutterBottom
                 >
                 </Typography>
-                <Grid
+                {/* <Grid
                   className={classes.socialButtons}
                   container
                   spacing={40}
@@ -285,7 +285,7 @@ const SignIn = props => {
                       Login with Google
                     </Button>
                   </Grid>
-                </Grid>
+                </Grid> */}
                 <Typography
                   align="center"
                   className={classes.sugestion}
