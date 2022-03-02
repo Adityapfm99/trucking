@@ -245,7 +245,7 @@ const SignIn = props => {
                   align="center"
                   width="100%"
                 >
-                  Trucking Mangement System
+                  Trucking Management System
                 </Typography>
                 <Typography
                   className={classes.title}

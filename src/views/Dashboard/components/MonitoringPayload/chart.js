@@ -4,8 +4,8 @@ export const data = {
   labels: ['1 Aug 21', '2 Aug 21', '3 Aug 21', '4 Aug 21', '5 Aug 21', '6 Aug 21','7 Aug 21'],
   datasets: [
     {
-      label: 'This Week',
-      backgroundColor: palette.primary.main,
+      label: 'Total Payload',
+      backgroundColor: palette.success.main,
       data: [1108, 511, 1119, 807, 529, 1109, 1200]
     }
     // {

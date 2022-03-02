@@ -4,15 +4,15 @@ export const data = {
   labels: ['1 Aug 21', '2 Aug 21', '3 Aug 21', '4 Aug 21', '5 Aug 21', '6 Aug 21','7 Aug 21'],
   datasets: [
     {
+      label: 'Total Payload',
+      backgroundColor: palette.success.main,
+      data: [1108, 511, 1119, 807, 529, 1109, 1200]
+    },
+    {
       label: 'Total Fuel',
       backgroundColor: palette.primary.main,
       data: [500, 100, 450, 200, 120, 410, 220]
     }
-    // {
-    //   label: 'Last year',
-    //   backgroundColor: palette.neutral,
-    //   data: [11, 20, 12, 29, 30, 25, 13]
-    // }
   ]
 };
 
@@ -26,7 +26,7 @@ export const options = {
     enabled: true,
     mode: 'index',
     intersect: false,
-    borderWidth: 3,
+    borderWidth: 5,
     borderColor: palette.divider,
     backgroundColor: palette.white,
     titleFontColor: palette.text.primary,
@@ -37,8 +37,8 @@ export const options = {
   scales: {
     xAxes: [
       {
-        barThickness: 12,
-        maxBarThickness: 10,
+        barThickness: 50,
+        maxBarThickness: 50,
         barPercentage: 0.5,
         categoryPercentage: 0.5,
         ticks: {
