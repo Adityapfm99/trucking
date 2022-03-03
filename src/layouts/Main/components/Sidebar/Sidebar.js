@@ -58,12 +58,12 @@ const Sidebar = props => {
     },
     {
       title: 'Monitoring payload',
-      // href: '/users',
+      href: '/NotFound',
       icon: <Assessment />
     },
     {
       title: 'Monitoring Fuel',
-      // href: '/users',
+      href: '/NotFound',
       icon: <EvStation />
     },
     {

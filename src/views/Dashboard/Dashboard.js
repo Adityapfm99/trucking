@@ -12,7 +12,10 @@ import {
   LatestProducts,
   LatestOrders,
   MonitoringPayload,
-  MonitoringFuel
+  MonitoringFuel,
+  MonitoringPayloadXFuel,
+  MonitoringFuelXDistance,
+  DeliveryTime
 } from './components';
 
 const useStyles = makeStyles(theme => ({
@@ -84,15 +87,7 @@ const Dashboard = () => {
         >
           <UsersByDevice />
         </Grid>
-        {/* <Grid
-          item
-          lg={4}
-          md={6}
-          xl={3}
-          xs={12}
-        >
-          <LatestProducts />
-        </Grid> */}
+       
         <Grid
           item
           lg={8}
@@ -101,6 +96,33 @@ const Dashboard = () => {
           xs={12}
         >
           <MonitoringPayload />
+        </Grid>
+        <Grid
+          item
+          lg={4}
+          md={6}
+          xl={3}
+          xs={12}
+        >
+          <DeliveryTime />
+        </Grid>
+        <Grid
+          item
+          lg={8}
+          md={12}
+          xl={9}
+          xs={12}
+        >
+          <MonitoringPayloadXFuel />
+        </Grid>
+        <Grid
+          item
+          lg={8}
+          md={12}
+          xl={9}
+          xs={12}
+        >
+          <MonitoringFuelXDistance />
         </Grid>
       </Grid>
     </div>

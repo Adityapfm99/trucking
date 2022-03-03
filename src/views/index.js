@@ -7,6 +7,9 @@ export { default as Settings } from './Settings';
 export { default as SignIn } from './SignIn';
 export { default as SignUp } from './SignUp';
 export { default as Typography } from './Typography';
-export { default as UserList } from './UserList';
+export { default as MonitoringVehicle } from './MonitoringVehicle';
 export { default as VehicleList } from './masterVehicle';
 export { default as addVehicle } from './Add Vehicle';
+export { default as Popup } from './popup';
+export { default as Maps } from './Maps';
+

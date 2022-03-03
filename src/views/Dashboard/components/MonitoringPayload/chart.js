@@ -5,7 +5,7 @@ export const data = {
   datasets: [
     {
       label: 'Total Payload',
-      backgroundColor: palette.success.main,
+      backgroundColor: 'rgba(255, 178, 102)',
       data: [1108, 511, 1119, 807, 529, 1109, 1200]
     }
     // {
@@ -18,9 +18,10 @@ export const data = {
 
 export const options = {
   responsive: true,
+  
   maintainAspectRatio: false,
   animation: false,
-  legend: { display: false },
+  legend: { display: true },
   cornerRadius: 10,
   tooltips: {
     enabled: true,

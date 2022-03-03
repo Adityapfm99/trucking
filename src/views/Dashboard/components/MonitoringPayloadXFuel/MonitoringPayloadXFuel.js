@@ -46,7 +46,7 @@ const LatestSales = props => {
             Last 7 days <ArrowDropDownIcon />
           </Button>
         }
-        title="Total Payloads x Total Fuels"
+        title="Total Payloads - Total Fuels"
       />
       <Divider />
       <CardContent>

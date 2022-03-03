@@ -7,7 +7,7 @@ import { Main as MainLayout, Minimal as MinimalLayout } from './layouts';
 import {
   Dashboard as DashboardView,
   ProductList as ProductListView,
-  UserList as UserListView,
+  MonitoringVehicle as MonitoringVehicle,
   Typography as TypographyView,
   Icons as IconsView,
   Account as AccountView,
@@ -16,7 +16,9 @@ import {
   SignIn as SignInView,
   NotFound as NotFoundView,
   VehicleList as VehicleTableView,
-  addVehicle as AddVehicleView
+  addVehicle as AddVehicleView,
+  Popup as Popup,
+  Maps as Maps,
 } from './views';
 
 const Routes = () => {
@@ -34,16 +36,28 @@ const Routes = () => {
         path="/dashboard"
       />
       <RouteWithLayout
-        component={UserListView}
+        component={MonitoringVehicle}
         exact
         layout={MainLayout}
         path="/monitoringVehicle"
+      />
+      <RouteWithLayout
+        component={Maps}
+        exact
+        layout={MainLayout}
+        path="/maps"
       />
       <RouteWithLayout
         component={ProductListView}
         exact
         layout={MainLayout}
         path="/products"
+      />
+       <RouteWithLayout
+        component={Popup}
+        exact
+        layout={MainLayout}
+        path="/popup"
       />
       <RouteWithLayout
         component={TypographyView}

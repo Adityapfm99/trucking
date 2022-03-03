@@ -1,11 +1,5 @@
 import uuid from 'uuid/v1';
 
-{/* <TableCell>Vehicle Name</TableCell>
-    <TableCell>License Plate</TableCell>
-    <TableCell>First Sync</TableCell>
-    <TableCell>Duration</TableCell>
-    <TableCell>Last Sync</TableCell>
-    <TableCell>Live Tracking</TableCel */}
 export default [
   {
     id: uuid(),

@@ -4,9 +4,10 @@ export const data = {
   labels: ['1 Aug 21', '2 Aug 21', '3 Aug 21', '4 Aug 21', '5 Aug 21', '6 Aug 21','7 Aug 21'],
   datasets: [
     {
-      label: 'Total Fuel',
-      backgroundColor: palette.primary.main,
-      data: [500, 100, 450, 200, 120, 410, 220]
+      label: 'Total Fuel Consumption',
+      borderColor: 'rgb(54, 162, 235)',
+      data: [500, 100, 450, 200, 120, 410, 220],
+      fill: true,
     }
     // {
     //   label: 'Last year',
@@ -20,7 +21,7 @@ export const options = {
   responsive: true,
   maintainAspectRatio: false,
   animation: false,
-  legend: { display: false },
+  legend: { display: true },
   cornerRadius: 10,
   tooltips: {
     enabled: true,

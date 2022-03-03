@@ -2,18 +2,19 @@ import palette from 'theme/palette';
 
 export const data = {
   labels: ['1 Aug 21', '2 Aug 21', '3 Aug 21', '4 Aug 21', '5 Aug 21', '6 Aug 21','7 Aug 21'],
-  datasets: [
-    {
-      label: 'Total Payload',
-      backgroundColor: 'rgb(84, 236, 160)',
-      data: [1108, 511, 1119, 807, 529, 1109, 1200]
-    },
-    {
-      label: 'Total Fuel Consumption',
-      backgroundColor: 'rgb(116, 131, 125)',
-      data: [500, 100, 450, 200, 120, 410, 220]
-    }
-  ]
+  datasets: [{
+    type: 'bar',
+    label: 'Total Distance',
+    data: [1000, 820, 900, 700, 750, 500, 1200],
+    borderColor: 'rgb(255, 99, 132)',
+    backgroundColor: 'rgba(255, 99, 132, 0.2)'
+  }, {
+    type: 'line',
+    label: 'Fuel Consumption',
+    data: [200, 150, 400, 200, 330, 100, 300, 600],
+    fill: true,
+    borderColor: 'rgb(54, 162, 235)'
+  }]
 };
 
 export const options = {
@@ -57,6 +58,7 @@ export const options = {
           beginAtZero: true,
           min: 0
         },
+ 
         gridLines: {
           borderDash: [2],
           borderDashOffset: [2],
@@ -65,7 +67,18 @@ export const options = {
           zeroLineBorderDash: [2],
           zeroLineBorderDashOffset: [2],
           zeroLineColor: palette.divider
-        }
+        },
+        title: {
+          display: true,
+          text: 'Value',
+          color: '#191',
+          font: {
+            family: 'Times',
+            size: 20,
+            style: 'normal',
+            lineHeight: 1.2
+          }
+        },
       }
     ]
   }

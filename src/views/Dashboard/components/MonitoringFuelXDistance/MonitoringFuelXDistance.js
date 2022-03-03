@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
-import { Line  } from 'react-chartjs-2';
+import { Bar  } from 'react-chartjs-2';
 import { makeStyles } from '@material-ui/styles';
 import {
   Card,
@@ -46,12 +46,12 @@ const LatestSales = props => {
             Last 7 days <ArrowDropDownIcon />
           </Button>
         }
-        title='Total Fuel (litres)' 
+        title="Total Distance - Fuel Used"
       />
       <Divider />
       <CardContent>
         <div className={classes.chartContainer}>
-          <Line
+          <Bar
             data={data}
             options={options}
           />

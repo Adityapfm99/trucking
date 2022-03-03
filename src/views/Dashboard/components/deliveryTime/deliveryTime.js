@@ -1,5 +1,5 @@
 import React from 'react';
-import { Doughnut } from 'react-chartjs-2';
+import { Doughnut, Pie,Radar,Polar } from 'react-chartjs-2';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles, useTheme } from '@material-ui/styles';
@@ -18,7 +18,7 @@ import RefreshIcon from '@material-ui/icons/Refresh';
 import Build from '@material-ui/icons/Build';
 import Check from '@material-ui/icons/Check';
 import TabletMacIcon from '@material-ui/icons/TabletMac';
-import { BurstMode, LaptopChromebook } from '@material-ui/icons';
+import { BurstMode, LaptopChromebook, PieChart, PieChartRounded, TimelineSharp, Timer } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -52,17 +52,19 @@ const UsersByDevice = props => {
     datasets: [
       {
         data: [85, 15],
+        type: 'pie',
         backgroundColor: [
-          theme.palette.primary.main,
+          // 'rgba(255, 99, 132, 0.2)',
+          'rgba(27, 210, 100)',
           theme.palette.error.main,
-          theme.palette.warning.main
+          // theme.palette.warning.main
         ],
         borderWidth: 8,
         borderColor: theme.palette.white,
         hoverBorderColor: theme.palette.white
       }
     ],
-    labels: ['Active', 'Broken']
+    labels: ['On Time', 'Late']
   };
 
   const options = {
@@ -87,17 +89,17 @@ const UsersByDevice = props => {
     }
   };
 
-  const devices = [
+  const delivery = [
     {
-      title: 'Active',
-      value: '85',
-      icon: <Check />,
+      title: 'On Time',
+      value: '90',
+      icon: <Timer/>,
       color: theme.palette.primary.main
     },
     {
-      title: 'Broken',
-      value: '15',
-      icon: < Build/>,
+      title: 'Late',
+      value: '10',
+      icon: < TimelineSharp/>,
       color: theme.palette.error.main
     },
    
@@ -114,18 +116,18 @@ const UsersByDevice = props => {
             <RefreshIcon />
           </IconButton>
         }
-        title="Status Vehicle"
+        title="Delivery Time"
       />
       <Divider />
       <CardContent>
         <div className={classes.chartContainer}>
-          <Doughnut
+          <Pie
             data={data}
             options={options}
           />
         </div>
         <div className={classes.stats}>
-          {devices.map(device => (
+          {delivery.map(device => (
             <div
               className={classes.device}
               key={device.title}
