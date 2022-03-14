@@ -14,7 +14,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 
 import { Profile, SidebarNav, UpgradePlan } from './components';
-import { Assessment, Commute, Equalizer, EvStation, LocalShipping } from '@material-ui/icons';
+import { Assessment, Commute, Equalizer, EvStation, LocalShipping, People } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
   drawer: {
@@ -71,11 +71,11 @@ const Sidebar = props => {
       href: '/masterVehicle',
       icon: <Commute />
     },
-    // { 
-    //   title: 'Products',
-    //   href: '/products',
-    //   icon: <ShoppingBasketIcon />
-    // },
+    {
+      title: 'Master Driver',
+      href: '/masterDriver',
+      icon: <People />
+    },
     // {
     //   title: 'Authentication',
     //   href: '/sign-in',

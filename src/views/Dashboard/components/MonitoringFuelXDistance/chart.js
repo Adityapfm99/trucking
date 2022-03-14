@@ -7,7 +7,7 @@ export const data = {
     label: 'Total Distance',
     data: [1000, 820, 900, 700, 750, 500, 1200],
     borderColor: 'rgb(255, 99, 132)',
-    backgroundColor: 'rgba(255, 99, 132, 0.2)'
+    backgroundColor: 'rgba(240, 89, 51)',
   }, {
     type: 'line',
     label: 'Fuel Consumption',

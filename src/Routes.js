@@ -16,6 +16,7 @@ import {
   SignIn as SignInView,
   NotFound as NotFoundView,
   VehicleList as VehicleTableView,
+  DriverList as DriverTableView,
   addVehicle as AddVehicleView,
   Popup as Popup,
   Maps as Maps,
@@ -88,6 +89,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/masterVehicle"
+      />
+       <RouteWithLayout
+        component={DriverTableView}
+        exact
+        layout={MainLayout}
+        path="/masterDriver"
       />
       <RouteWithLayout
         component={AddVehicleView}
