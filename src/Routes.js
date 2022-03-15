@@ -8,6 +8,7 @@ import {
   Dashboard as DashboardView,
   ProductList as ProductListView,
   MonitoringVehicle as MonitoringVehicle,
+  MonitoringLoad as MonitoringLoad,
   Typography as TypographyView,
   Icons as IconsView,
   Account as AccountView,
@@ -41,6 +42,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/monitoringVehicle"
+      />
+       <RouteWithLayout
+        component={MonitoringLoad}
+        exact
+        layout={MainLayout}
+        path="/monitoringLoad"
       />
       <RouteWithLayout
         component={Maps}

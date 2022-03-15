@@ -8,6 +8,7 @@ export { default as SignIn } from './SignIn';
 export { default as SignUp } from './SignUp';
 export { default as Typography } from './Typography';
 export { default as MonitoringVehicle } from './MonitoringVehicle';
+export { default as MonitoringLoad } from './MonitoringLoad';
 export { default as VehicleList } from './masterVehicle';
 export { default as DriverList } from './masterDriver';
 export { default as addVehicle } from './Add Vehicle';

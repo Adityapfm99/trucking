@@ -58,7 +58,7 @@ const Sidebar = props => {
     },
     {
       title: 'Monitoring payload',
-      href: '/NotFound',
+      href: '/monitoringLoad',
       icon: <Assessment />
     },
     {
