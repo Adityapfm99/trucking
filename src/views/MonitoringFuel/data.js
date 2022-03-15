@@ -5,90 +5,90 @@ export default [
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
     LicensePlate: 'B 9122 UIP',
-    FirstSync: '2022-02-10 08:40:00',
-    Duration: '20',
+    fuel: '200',
+    distance: '800',
     LastSync: '2022-02-10 08:40:00',
-    weight: '1000'
+    LastPosition: 'SPBU 59-100'
   },
   {
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
     LicensePlate: 'B 9122 UIP',
-    FirstSync: '2022-02-10 08:40:00',
-    Duration: '20',
+    fuel: '100',
+    distance: '400',
     LastSync: '2022-02-10 08:40:00',
-    weight: '1500'
+    LastPosition: 'SPBU 59-100'
   },
   {
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
     LicensePlate: 'B 9122 UIP',
-    FirstSync: '2022-02-10 08:40:00',
-    Duration: '20',
+    fuel: '100',
+    distance: '400',
     LastSync: '2022-02-10 08:40:00',
-    weight: '1500'
+    LastPosition: 'SPBU 59-100'
   },
   {
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
     LicensePlate: 'B 9122 UIP',
-    FirstSync: '2022-02-10 08:40:00',
-    Duration: '20',
+    fuel: '120',
+    distance: '500',
     LastSync: '2022-02-10 08:40:00',
-    weight: '1000'
+    LastPosition: 'SPBU 59-100'
   },
   {
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
     LicensePlate: 'B 9122 UIP',
-    FirstSync: '2022-02-10 08:40:00',
-    Duration: '20',
+    fuel: '150',
+    distance: '400',
     LastSync: '2022-02-10 08:40:00',
-    weight: '1100'
+    LastPosition: 'SPBU 59-100'
   },
   {
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
     LicensePlate: 'B 9122 UIP',
-    FirstSync: '2022-02-10 08:40:00',
-    Duration: '20',
+    fuel: '150',
+    distance: '400',
     LastSync: '2022-02-10 08:40:00',
-    weight: '100'
+    LastPosition: 'SPBU 59-100'
   },
   {
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
     LicensePlate: 'B 9122 UIP',
-    FirstSync: '2022-02-10 08:40:00',
-    Duration: '20',
+    fuel: '100',
+    distance: '600',
     LastSync: '2022-02-10 08:40:00',
-    weight: '1000'
+    LastPosition: 'SPBU 59-100'
   },
   {
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
     LicensePlate: 'B 9122 UIP',
-    FirstSync: '2022-02-10 08:40:00',
-    Duration: '20',
+    fuel: '150',
+    distance: '800',
     LastSync: '2022-02-10 08:40:00',
-    weight: '1000'
+    LastPosition: 'SPBU 59-100'
   },
   {
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
     LicensePlate: 'B 9122 UIP',
-    FirstSync: '2022-02-10 08:40:00',
-    Duration: '20',
+    fuel: '190',
+    distance: '200',
     LastSync: '2022-02-10 08:40:00',
-    weight: '800'
+    LastPosition: 'SPBU 59-100'
   },
   {
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
     LicensePlate: 'B 9122 UIP',
-    FirstSync: '2022-02-10 08:40:00',
-    Duration: '20',
+    fuel: '100',
+    distance: '200',
     LastSync: '2022-02-10 08:40:00',
-    weight: '1000'
+    LastPosition: 'SPBU 59-100'
   },
 ];

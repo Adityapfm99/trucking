@@ -2,19 +2,12 @@ import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
-import { CardActions, Divider, Drawer } from '@material-ui/core';
+import { Divider, Drawer } from '@material-ui/core';
 import DashboardIcon from '@material-ui/icons/Dashboard';
-import PeopleIcon from '@material-ui/icons/People';
-import MonitoringIcon from '@material-ui/icons/MovieCreationTwoTone';
-import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
-import TextFieldsIcon from '@material-ui/icons/TextFields';
-import ImageIcon from '@material-ui/icons/Image';
-import AccountBoxIcon from '@material-ui/icons/AccountBox';
 import SettingsIcon from '@material-ui/icons/Settings';
-import LockOpenIcon from '@material-ui/icons/LockOpen';
 
-import { Profile, SidebarNav, UpgradePlan } from './components';
-import { Assessment, Commute, Equalizer, EvStation, LocalShipping, People } from '@material-ui/icons';
+import { Profile, SidebarNav } from './components';
+import { Assessment, Commute, EvStation, LocalShipping, People } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
   drawer: {
@@ -57,13 +50,13 @@ const Sidebar = props => {
     
     },
     {
-      title: 'Monitoring payload',
+      title: 'Monitoring Load',
       href: '/monitoringLoad',
       icon: <Assessment />
     },
     {
       title: 'Monitoring Fuel',
-      href: '/NotFound',
+      href: '/monitoringFuel',
       icon: <EvStation />
     },
     {

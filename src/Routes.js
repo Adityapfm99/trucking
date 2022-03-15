@@ -9,6 +9,7 @@ import {
   ProductList as ProductListView,
   MonitoringVehicle as MonitoringVehicle,
   MonitoringLoad as MonitoringLoad,
+  MonitoringFuel as MonitoringFuel,
   Typography as TypographyView,
   Icons as IconsView,
   Account as AccountView,
@@ -19,6 +20,7 @@ import {
   VehicleList as VehicleTableView,
   DriverList as DriverTableView,
   addVehicle as AddVehicleView,
+  addDriver as AddDriverView,
   Popup as Popup,
   Maps as Maps,
 } from './views';
@@ -48,6 +50,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/monitoringLoad"
+      />
+        <RouteWithLayout
+        component={MonitoringFuel}
+        exact
+        layout={MainLayout}
+        path="/monitoringFuel"
       />
       <RouteWithLayout
         component={Maps}
@@ -108,6 +116,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/addVehicle"
+      />
+       <RouteWithLayout
+        component={AddDriverView}
+        exact
+        layout={MainLayout}
+        path="/addDriver"
       />
       <RouteWithLayout
         component={SignUpView}

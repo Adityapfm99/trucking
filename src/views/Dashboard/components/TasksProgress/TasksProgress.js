@@ -8,7 +8,6 @@ import {
   Grid,
   Typography,
   Avatar,
-  LinearProgress
 } from '@material-ui/core';
 import InsertChartIcon from '@material-ui/icons/InsertChartOutlined';
 

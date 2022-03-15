@@ -11,14 +11,10 @@ import {
   Divider,
   Typography
 } from '@material-ui/core';
-import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import RefreshIcon from '@material-ui/icons/Refresh';
 // BatteryAlertTwoTone
 import Build from '@material-ui/icons/Build';
 import Check from '@material-ui/icons/Check';
-import TabletMacIcon from '@material-ui/icons/TabletMac';
-import { BurstMode, LaptopChromebook } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
   root: {

@@ -105,10 +105,10 @@ const UsersTable = props => {
                 <TableRow>
                   <TableCell>VEHICLE NAME</TableCell>
                   <TableCell>LICENSE PLATE</TableCell>
-                  <TableCell>FIRST SYNC</TableCell>
-                  <TableCell>DURATION (minutes)</TableCell>
+                  <TableCell>Fuel(litres)</TableCell>
+                  <TableCell>KM (distance)</TableCell>
                   <TableCell>LAST SYNC</TableCell>
-                  <TableCell>WEIGHT(Kg) </TableCell>
+                  <TableCell>LAST POSITION </TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -116,10 +116,10 @@ const UsersTable = props => {
                   <TableRow>
                     <TableCell>{user.VehicleName}</TableCell>
                     <TableCell>{user.LicensePlate}</TableCell>
-                    <TableCell>{user.FirstSync}</TableCell>
-                    <TableCell>{user.Duration}</TableCell>
+                    <TableCell>{user.fuel}</TableCell>
+                    <TableCell>{user.distance}</TableCell>
                     <TableCell>{user.LastSync}</TableCell>
-                    <TableCell>{user.weight}</TableCell>
+                    <TableCell>{user.LastPosition}</TableCell>
                     <TableCell>
                       {/* <GpsFixed color="primary" onClick={togglePopup}>Open</GpsFixed>
                       <Modal 

@@ -4,29 +4,17 @@ import PropTypes from 'prop-types';
 import Backdrop from '@material-ui/core/Backdrop';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import { makeStyles } from '@material-ui/styles';
-import Fade from '@material-ui/core/Fade';
-import Button from '@material-ui/core/Button';
-import Link from '@material-ui/core/Link';
 import Modal from '@material-ui/core/Modal';
-
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
 
 import {
   Card,
   CardActions,
   CardContent,
-  Avatar,
-  Checkbox,
   Table,
   TableBody,
   TableCell,
   TableHead,
   TableRow,
-  Typography,
   TablePagination
 } from '@material-ui/core';
 
