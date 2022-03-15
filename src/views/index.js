@@ -11,6 +11,7 @@ export { default as MonitoringVehicle } from './MonitoringVehicle';
 export { default as MonitoringLoad } from './MonitoringLoad';
 export { default as MonitoringFuel } from './MonitoringFuel';
 export { default as VehicleList } from './masterVehicle';
+export { default as ServiceReminder } from './ServiceReminder';
 export { default as DriverList } from './masterDriver';
 export { default as addVehicle } from './Add Vehicle';
 export { default as addDriver } from './Add Driver';

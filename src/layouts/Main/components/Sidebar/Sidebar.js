@@ -7,7 +7,7 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 import SettingsIcon from '@material-ui/icons/Settings';
 
 import { Profile, SidebarNav } from './components';
-import { Assessment, Commute, EvStation, LocalShipping, People } from '@material-ui/icons';
+import { AlarmAdd, AlarmAddSharp, Assessment, Commute, EvStation, LocalShipping, People, SecurityRounded, ViewAgenda } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
   drawer: {
@@ -68,6 +68,16 @@ const Sidebar = props => {
       title: 'Master Driver',
       href: '/masterDriver',
       icon: <People />
+    },
+    {
+      title: 'Vendors',
+      href: '/masterDriver',
+      icon: <ViewAgenda />
+    },
+    {
+      title: 'Service Reminder',
+      href: '/serviceReminder',
+      icon: <AlarmAdd />
     },
     // {
     //   title: 'Authentication',

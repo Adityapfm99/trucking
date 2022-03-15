@@ -41,7 +41,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const VehicleTable = props => {
+const ReminderTable = props => {
   const { className, vehicles, ...rest } = props;
 
   const classes = useStyles();
@@ -113,16 +113,13 @@ const VehicleTable = props => {
                       }
                       onChange={handleSelectAll}
                     />
-                     </TableCell>
+                  </TableCell>
                   <TableCell>VEHICLE NAME</TableCell>
                   <TableCell>LICENSE PLATE</TableCell>
-                  <TableCell>OWNERSHIP</TableCell>
-                  <TableCell>EXPEDITION</TableCell>
-                  <TableCell>PIC NAME</TableCell>
-                  <TableCell>SENSOR LOAD</TableCell>
-                  <TableCell>SENSOR FUEL</TableCell>
-                  <TableCell>SENSOR TANK</TableCell>
-                  <TableCell>STATUS</TableCell>
+                  <TableCell>MAINTENANCE TYPE</TableCell>
+                  <TableCell>NEXT MAINTENANCE(KM)</TableCell>
+                  <TableCell>COST</TableCell>
+                  <TableCell>NOTES</TableCell>
                   
                 </TableRow>
               </TableHead>
@@ -150,13 +147,11 @@ const VehicleTable = props => {
                       </div>
                     </TableCell>
                     <TableCell>{vehicle.licensePlate}</TableCell>
-                    <TableCell>{vehicle.ownership}</TableCell>
-                    <TableCell>{vehicle.expedition}</TableCell>
-                    <TableCell>{vehicle.picName}</TableCell>
-                    <TableCell>{vehicle.sensorLoad}</TableCell>
-                    <TableCell>{vehicle.sensorFuel}</TableCell>
-                    <TableCell>{vehicle.sensorTank}</TableCell>
-                    <TableCell>{vehicle.status}</TableCell>
+                    <TableCell>{vehicle.maintenanceType}</TableCell>
+                    <TableCell>{vehicle.next}</TableCell>
+                    <TableCell>{vehicle.cost}</TableCell>
+                    <TableCell>{vehicle.notes}</TableCell>
+                  
                   </TableRow>
                 ))}
               </TableBody>
@@ -179,9 +174,9 @@ const VehicleTable = props => {
   );
 };
 
-VehicleTable.propTypes = {
+ReminderTable.propTypes = {
   className: PropTypes.string,
   vehicle: PropTypes.array.isRequired
 };
 
-export default VehicleTable;
+export default ReminderTable;

@@ -14,6 +14,7 @@ import {
   MonitoringFuelXDistance,
   DeliveryTime
 } from './components';
+import ServiceReminder from './components/ServiceReminder';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -111,6 +112,15 @@ const Dashboard = () => {
           xs={12}
         >
           <MonitoringPayloadXFuel />
+        </Grid>
+        <Grid
+          item
+          lg={4}
+          md={6}
+          xl={3}
+          xs={12}
+        >
+          <ServiceReminder />
         </Grid>
         <Grid
           item

@@ -23,6 +23,7 @@ import {
   addDriver as AddDriverView,
   Popup as Popup,
   Maps as Maps,
+  ServiceReminder,
 } from './views';
 
 const Routes = () => {
@@ -104,6 +105,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/masterVehicle"
+      />
+        <RouteWithLayout
+        component={ServiceReminder}
+        exact
+        layout={MainLayout}
+        path="/serviceReminder"
       />
        <RouteWithLayout
         component={DriverTableView}
