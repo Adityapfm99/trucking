@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import { makeStyles } from '@material-ui/styles';
+
 import {
   Card,
   CardActions,
@@ -118,7 +119,7 @@ const VehicleTable = props => {
                   <TableCell>NIK</TableCell>
                   <TableCell>VEHICLE NAME</TableCell>
                   <TableCell>PIC</TableCell>
-                  <TableCell>RANK</TableCell>
+                  <TableCell>TOTAL LOAD</TableCell>
                   
                 </TableRow>
               </TableHead>

@@ -4,32 +4,32 @@ import moment from 'moment';
 export default [
   {
     id: uuid(),
-    name: 'Dropbox',
-    imageUrl: '/images/products/product_1.png',
+    name: 'Driver A',
+    total: '5000 Kg',
     updatedAt: moment().subtract(2, 'hours')
   },
   {
     id: uuid(),
-    name: 'Medium Corporation',
-    imageUrl: '/images/products/product_2.png',
+    name: 'Driver B',
+    total: '3200 Kg',
     updatedAt: moment().subtract(2, 'hours')
   },
   {
     id: uuid(),
-    name: 'Slack',
-    imageUrl: '/images/products/product_3.png',
+    name: 'Driver C',
+    total: '3200 Kg',
     updatedAt: moment().subtract(3, 'hours')
   },
   {
     id: uuid(),
-    name: 'Lyft',
-    imageUrl: '/images/products/product_4.png',
+    name: 'Driver D',
+    total: '4200 Kg',
     updatedAt: moment().subtract(5, 'hours')
   },
   {
     id: uuid(),
-    name: 'GitHub',
-    imageUrl: '/images/products/product_5.png',
+    name: 'Driver E',
+    total: '3200 Kg',
     updatedAt: moment().subtract(9, 'hours')
   }
 ];

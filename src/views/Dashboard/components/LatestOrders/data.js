@@ -3,8 +3,8 @@ import uuid from 'uuid/v1';
 export default [
   {
     id: uuid(),
-    ref: 'CDD1049',
-    amount: 30.5,
+    driverName: 'Abdul Samad',
+    totalLoad: '4300 Kg',
     customer: {
       name: 'Ekaterina Tankova'
     },

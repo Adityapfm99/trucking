@@ -51,7 +51,7 @@ const ReminderToolbar = props => {
         <Button
           color="primary"
           variant="contained"
-          href = '/addVehicle'
+          href = '/addMaintenance'
         >
           Add Maintenance
         </Button>

@@ -50,7 +50,7 @@ const LatestProducts = props => {
     >
       <CardHeader
         subtitle={`${products.length} in total`}
-        title="Latest products"
+        title="Top 5 Drivers"
       />
       <Divider />
       <CardContent className={classes.content}>
@@ -60,16 +60,10 @@ const LatestProducts = props => {
               divider={i < products.length - 1}
               key={product.id}
             >
-              <ListItemAvatar>
-                <img
-                  alt="Product"
-                  className={classes.image}
-                  src={product.imageUrl}
-                />
-              </ListItemAvatar>
+           
               <ListItemText
                 primary={product.name}
-                secondary={`Updated ${product.updatedAt.fromNow()}`}
+                secondary={product.total}
               />
               <IconButton
                 edge="end"

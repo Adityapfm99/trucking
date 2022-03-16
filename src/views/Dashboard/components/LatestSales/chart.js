@@ -1,13 +1,12 @@
 import palette from 'theme/palette';
 
 export const data = {
-  labels: ['1 Aug 21', '2 Aug 21', '3 Aug 21', '4 Aug 21', '5 Aug 21', '6 Aug 21','7 Aug 21'],
+  labels: ['1 Aug', '2 Aug', '3 Aug', '4 Aug', '5 Aug', '6 Aug'],
   datasets: [
     {
-      label: 'Total Fuel Consumption',
-      borderColor: 'rgb(54, 162, 235)',
-      data: [500, 100, 450, 200, 120, 410, 220],
-      fill: true,
+      label: 'This year',
+      backgroundColor: palette.primary.main,
+      data: [18, 5, 19, 27, 29, 19, 20]
     },
     {
       label: 'Last year',
@@ -21,13 +20,13 @@ export const options = {
   responsive: true,
   maintainAspectRatio: false,
   animation: false,
-  legend: { display: true },
-  cornerRadius: 10,
+  legend: { display: false },
+  cornerRadius: 20,
   tooltips: {
     enabled: true,
     mode: 'index',
     intersect: false,
-    borderWidth: 3,
+    borderWidth: 1,
     borderColor: palette.divider,
     backgroundColor: palette.white,
     titleFontColor: palette.text.primary,

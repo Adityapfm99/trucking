@@ -2,20 +2,50 @@ import palette from 'theme/palette';
 
 export const data = {
   labels: ['1 Aug 21', '2 Aug 21', '3 Aug 21', '4 Aug 21', '5 Aug 21', '6 Aug 21','7 Aug 21'],
+  type: 'line',
   datasets: [
     {
-      label: 'Total Fuel Consumption',
-      borderColor: 'rgb(54, 162, 235)',
-      data: [500, 100, 450, 200, 120, 410, 220],
-      fill: true,
+      label: 'Driver A',
+      backgroundColor: 'rgba(30, 228, 21, 0.8)',
+      borderColor: 'rgba(30, 228, 21, 0.8)',
+      type: 'line',
+      pointStyle: 'circle',
+      fill: false,
+      data: [1200, 1400, 1500, 1050, 1230, 1800, 690]
     },
     {
-      label: 'Last year',
-      backgroundColor: palette.neutral,
-      data: [11, 20, 12, 29, 30, 25, 13]
-    }
+      label: 'Driver B',
+      borderColor: 'rgba(21, 73, 228, 0.8)',
+      type: 'line',
+      pointStyle: 'circle',
+      fill: false,
+      data: [1020, 1900, 1030, 1400, 1280, 870, 400]
+    },
+    {
+      label: 'Driver C',
+      borderColor: 'rgba(159, 50, 231, 0.8)',
+      type: 'line',
+      fill: false,
+      data: [1041, 1750, 1102, 1500, 1280, 950, 627]
+    },
+    {
+      label: 'Driver D',
+      borderColor: 'rgba(14, 50, 227, 0.36)',
+      type: 'line',
+      fill: false,
+      data: [1010, 1150, 1210, 1330, 1280, 1190, 935]
+    },
+    {
+      label: 'Driver E',
+      borderColor: 'rgba(255, 178, 102)',
+      type: 'line',
+      fill: false,
+      data: [1240, 1121, 1191, 1304, 1204, 1458, 1192]
+    },
+  
   ]
 };
+
 
 export const options = {
   responsive: true,

@@ -63,16 +63,16 @@ const LatestOrders = props => {
       className={clsx(classes.root, className)}
     >
       <CardHeader
-        action={
-          <Button
-            color="primary"
-            size="small"
-            variant="outlined"
-          >
-            New entry
-          </Button>
-        }
-        title="Latest Orders"
+        // action={
+        //   <Button
+        //     color="primary"
+        //     size="small"
+        //     variant="outlined"
+        //   >
+        //     New entry
+        //   </Button>
+        // }
+        title="Top 10 Drivers"
       />
       <Divider />
       <CardContent className={classes.content}>
@@ -81,9 +81,9 @@ const LatestOrders = props => {
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell>Order Ref</TableCell>
-                  <TableCell>Customer</TableCell>
-                  <TableCell sortDirection="desc">
+                  <TableCell>Driver Name</TableCell>
+                  <TableCell>Total Load</TableCell>
+                  {/* <TableCell sortDirection="desc">
                     <Tooltip
                       enterDelay={300}
                       title="Sort"
@@ -95,7 +95,7 @@ const LatestOrders = props => {
                         Date
                       </TableSortLabel>
                     </Tooltip>
-                  </TableCell>
+                  </TableCell> */}
                   <TableCell>Status</TableCell>
                 </TableRow>
               </TableHead>
@@ -105,11 +105,9 @@ const LatestOrders = props => {
                     hover
                     key={order.id}
                   >
-                    <TableCell>{order.ref}</TableCell>
-                    <TableCell>{order.customer.name}</TableCell>
-                    <TableCell>
-                      {moment(order.createdAt).format('DD/MM/YYYY')}
-                    </TableCell>
+                    <TableCell>{order.driverName}</TableCell>
+                    <TableCell>{order.totalLoad}</TableCell>
+                   
                     <TableCell>
                       <div className={classes.statusContainer}>
                         <StatusBullet

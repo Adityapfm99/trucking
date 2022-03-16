@@ -70,11 +70,6 @@ const Sidebar = props => {
       icon: <People />
     },
     {
-      title: 'Vendors',
-      href: '/masterDriver',
-      icon: <ViewAgenda />
-    },
-    {
       title: 'Service Reminder',
       href: '/serviceReminder',
       icon: <AlarmAdd />

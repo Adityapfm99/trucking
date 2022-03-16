@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/styles';
 import { Button } from '@material-ui/core';
 
 import { SearchInput } from 'components';
+import { ChartDriverDetail } from '../../../Dashboard/components';
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -20,6 +21,7 @@ const useStyles = makeStyles(theme => ({
   importButton: {
     marginRight: theme.spacing(1)
   },
+
   exportButton: {
     marginRight: theme.spacing(1)
   },
@@ -70,6 +72,11 @@ const VehiclesToolbar = props => {
           className={classes.searchInput}
           placeholder="Search vehicle"
         />
+        
+      </div>
+      <div className={classes.root}>
+        <br></br>
+       <ChartDriverDetail/>
         
       </div>
     </div>

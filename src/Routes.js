@@ -20,11 +20,13 @@ import {
   VehicleList as VehicleTableView,
   DriverList as DriverTableView,
   addVehicle as AddVehicleView,
+  // addMaintenance as AddMaintenance,
   addDriver as AddDriverView,
   Popup as Popup,
   Maps as Maps,
   ServiceReminder,
 } from './views';
+import AddMaintenance from './views/Add Maintenance';
 
 const Routes = () => {
   return (
@@ -123,6 +125,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/addVehicle"
+      />
+       <RouteWithLayout
+        component={AddMaintenance}
+        exact
+        layout={MainLayout}
+        path="/addMaintenance"
       />
        <RouteWithLayout
         component={AddDriverView}
