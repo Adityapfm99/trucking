@@ -11,4 +11,5 @@ export { default as TotalUsers } from './TotalUsers';
 export { default as UsersByDevice } from './UsersByDevice';
 export { default as DeliveryTime } from './deliveryTime';
 export { default as ChartDriverDetail } from './chartDriverDetail';
+export { default as ChartCostVehicle } from './chartCostVehicle';
 

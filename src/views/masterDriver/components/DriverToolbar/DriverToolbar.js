@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
 import { Button } from '@material-ui/core';
-
+import { Grid } from '@material-ui/core';
 import { SearchInput } from 'components';
-import { ChartDriverDetail } from '../../../Dashboard/components';
+import { ChartDriverDetail, Budget } from '../../../Dashboard/components';
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -76,7 +76,9 @@ const VehiclesToolbar = props => {
       </div>
       <div className={classes.root}>
         <br></br>
-       <ChartDriverDetail/>
+    
+      
+        <ChartDriverDetail />
         
       </div>
     </div>

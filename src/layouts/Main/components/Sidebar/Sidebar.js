@@ -7,7 +7,7 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 import SettingsIcon from '@material-ui/icons/Settings';
 
 import { Profile, SidebarNav } from './components';
-import { AlarmAdd, AlarmAddSharp, Assessment, Commute, EvStation, LocalShipping, People, SecurityRounded, ViewAgenda } from '@material-ui/icons';
+import { AlarmAdd, AlarmAddSharp, Assessment, Commute, ControlPointDuplicate, EvStation, FileCopy, LocalShipping, People, Report, ReportOffTwoTone, ReportProblem, ReportRounded, RoomService, SecurityRounded, SendRounded, TransitEnterexitSharp, TripOriginTwoTone, UnsubscribeRounded, ViewAgenda, VpnKeyTwoTone } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
   drawer: {
@@ -70,10 +70,16 @@ const Sidebar = props => {
       icon: <People />
     },
     {
-      title: 'Service Reminder',
+      title: 'Maintenance Vehicle',
       href: '/serviceReminder',
-      icon: <AlarmAdd />
+      icon: <ControlPointDuplicate />
     },
+    {
+      title: 'Reports',
+      href: '/not-found',
+      icon: <FileCopy />
+    },
+   
     // {
     //   title: 'Authentication',
     //   href: '/sign-in',
@@ -97,7 +103,7 @@ const Sidebar = props => {
     {
       title: 'Change Password',
       href: '/settings',
-      icon: <SettingsIcon />
+      icon: <VpnKeyTwoTone />
     }
   ];
 

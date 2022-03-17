@@ -76,6 +76,7 @@ const AddMaintenance = props => {
         autoComplete="off"
         noValidate
       >
+        <br></br>
         <CardHeader
           // subheader="The information can be edited"
           title="Add Maintenance Schedule"
@@ -121,12 +122,31 @@ const AddMaintenance = props => {
             >
               <TextField
                 fullWidth
-                label="Service tasks"
+                label="cost"
                 margin="dense"
-                name="tasks"
+                name="cost"
                 onChange={handleChange}
                 required
-                value={values.tasks}
+                value={values.cost}
+                variant="outlined"
+              >
+               
+              </TextField>
+            </Grid>
+            <Grid
+              item
+              md={6}
+              xs={12}
+            >
+              <TextField
+                fullWidth
+                label="maintenance_type"
+                margin="dense"
+                multiline
+                name="maintenance_type"
+                onChange={handleChange}
+                required
+                value={values.maintenance_type}
                 variant="outlined"
               />
             </Grid>
@@ -137,18 +157,15 @@ const AddMaintenance = props => {
             >
               <TextField
                 fullWidth
-                label="interval"
+                label="next_maintenance"
                 margin="dense"
-                name="serviceInterval"
+                name="next_maintenance"
                 onChange={handleChange}
                 required
-                value={values.serviceInterval}
+                value={values.next_maintenance}
                 variant="outlined"
-              >
-               
-              </TextField>
+              />
             </Grid>
-           
             <Grid
               item
               md={6}
@@ -159,8 +176,10 @@ const AddMaintenance = props => {
                 label="notes"
                 margin="dense"
                 name="notes"
+                multiline
                 onChange={handleChange}
                 required
+                minRows={3}
                 value={values.notes}
                 variant="outlined"
               >

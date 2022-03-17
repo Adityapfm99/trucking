@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/styles';
 import { Button } from '@material-ui/core';
 
 import { SearchInput } from 'components';
+import { ChartCostVehicle } from '../../../Dashboard/components';
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -61,6 +62,13 @@ const ReminderToolbar = props => {
           className={classes.searchInput}
           placeholder="Search vehicle"
         />
+        
+      </div>
+      <div className={classes.root}>
+        <br></br>
+    
+      
+        <ChartCostVehicle />
         
       </div>
     </div>
