@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
+import { StatusBullet } from 'components';
 import moment from 'moment';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import { makeStyles } from '@material-ui/styles';
@@ -87,6 +88,12 @@ const VehicleTable = props => {
   const handlePageChange = (event, page) => {
     setPage(page);
   };
+  const statusColors = {
+    normal: 'success',
+    pending: 'warning',
+    maintenance: 'danger'
+  };
+
 
   const handleRowsPerPageChange = event => {
     setRowsPerPage(event.target.value);
@@ -156,7 +163,17 @@ const VehicleTable = props => {
                     <TableCell>{vehicle.sensorLoad}</TableCell>
                     <TableCell>{vehicle.sensorFuel}</TableCell>
                     <TableCell>{vehicle.sensorTank}</TableCell>
-                    <TableCell>{vehicle.status}</TableCell>
+                    <TableCell>
+                      <div className={classes.statusContainer}>
+                        <StatusBullet
+                          className={classes.status}
+                          color={statusColors[vehicle.status]}
+                          size="md"
+                          justifyContent="center"
+                        />
+                        {/* {vehicle.status} */}
+                      </div>
+                    </TableCell>
                   </TableRow>
                 ))}
               </TableBody>

@@ -4,121 +4,121 @@ export default [
   {
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
-    licensePlate:'B 7120 TEO',
+    licensePlate:'B 7092 BQ',
     ownership: 'own',
     expedition: 'wahana',
-    picName: 'Budi doremi',
+    picName: 'ALIYUDIN',
     sensorLoad: 'SL-001',
     sensorTank: 'ST-020',
     sensorFuel:'SF-2113',
-    status:'active'
+    status:'normal'
   },
   {
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
-    licensePlate:'B 7120 TEO',
+    licensePlate:'B 7702 NOP',
     ownership: 'own',
     expedition: 'wahana',
-    picName: 'Budi doremi',
+    picName: 'ALIYUDIN',
     sensorLoad: 'SL-001',
     sensorTank: 'ST-020',
     sensorFuel:'SF-2113',
-    status:'active'
+    status:'maintenance'
   },
   {
     id: uuid(),
-    VehicleName: 'MITSUBISHI, CANTER 120 PS',
-    licensePlate:'B 7120 TEO',
+    VehicleName: 'TOYOTA DYNA',
+    licensePlate:'B 7921 KAI',
     ownership: 'own',
     expedition: 'luar',
-    picName: 'Budi doremi',
+    picName: 'SUPANGKAT',
     sensorLoad: 'SL-001',
     sensorTank: 'ST-020',
     sensorFuel:'SF-2113',
-    status:'active'
+    status:'normal'
   },
   {
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
-    licensePlate:'B 7120 TEO',
+    licensePlate:'B 7341 CSE',
     ownership: 'own',
     expedition: 'wahana',
-    picName: 'Budi doremi',
+    picName: 'BUDI',
     sensorLoad: 'SL-001',
     sensorTank: 'ST-020',
     sensorFuel:'SF-2113',
-    status:'broken'
+    status:'normal'
   },
   {
     id: uuid(),
-    VehicleName: 'MITSUBISHI, CANTER 120 PS',
-    licensePlate:'B 7120 TEO',
+    VehicleName: 'MITSUBISHI, FUSO',
+    licensePlate:'B 7992 BHU',
     ownership: 'rent',
     expedition: 'wahana',
-    picName: 'Budi doremi',
+    picName: 'AHMAD',
     sensorLoad: 'SL-001',
     sensorTank: 'ST-020',
     sensorFuel:'SF-2113',
-    status:'active'
+    status:'normal'
   },
   {
     id: uuid(),
-    VehicleName: 'MITSUBISHI, CANTER 120 PS',
-    licensePlate:'B 7120 TEO',
+    VehicleName: 'MITSUBISHI, FUSO',
+    licensePlate:'B 7677 AAD',
     ownership: 'own',
     expedition: 'wahana',
-    picName: 'Budi doremi',
+    picName: 'AGUNG',
     sensorLoad: 'SL-001',
     sensorTank: 'ST-020',
     sensorFuel:'SF-2113',
-    status:'active'
+    status:'pending'
   },
   {
     id: uuid(),
-    VehicleName: 'MITSUBISHI, CANTER 120 PS',
-    licensePlate:'B 7120 TEO',
+    VehicleName: 'TOYOTA DYNA',
+    licensePlate:'B 7621 SAO',
     ownership: 'own',
     expedition: 'wahana',
-    picName: 'Budi doremi',
+    picName: 'JEREMI',
     sensorLoad: 'SL-001',
     sensorTank: 'ST-020',
     sensorFuel:'SF-2113',
-    status:'broken'
+    status:'maintenance'
   },
   {
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
-    licensePlate:'B 7120 TEO',
+    licensePlate:'B 7892 UJI',
     ownership: 'own',
     expedition: 'luar',
-    picName: 'Budi doremi',
+    picName: 'PARTO',
     sensorLoad: 'SL-001',
     sensorTank: 'ST-020',
     sensorFuel:'SF-2113',
-    status:'active'
+    status:'normal'
   },
   {
     id: uuid(),
     VehicleName: 'MITSUBISHI, CANTER 120 PS',
-    licensePlate:'B 7120 TEO',
-    ownership: 'rent',
-    expedition: 'luar',
-    picName: 'Budi doremi',
-    sensorLoad: 'SL-001',
-    sensorTank: 'ST-020',
-    sensorFuel:'SF-2113',
-    status:'active'
-  },
-  {
-    id: uuid(),
-    VehicleName: 'MITSUBISHI, CANTER 120 PS',
-    licensePlate:'B 7120 TEO',
+    licensePlate:'B 7341 JKP',
     ownership: 'rent',
     expedition: 'luar',
     picName: 'Budi doremi',
     sensorLoad: 'SL-001',
     sensorTank: 'ST-020',
     sensorFuel:'SF-2113',
-    status:'active'
+    status:'normal'
+  },
+  {
+    id: uuid(),
+    VehicleName: 'MITSUBISHI, CANTER 120 PS',
+    licensePlate:'B 7567 GEO',
+    ownership: 'rent',
+    expedition: 'luar',
+    picName: 'Budi doremi',
+    sensorLoad: 'SL-001',
+    sensorTank: 'ST-020',
+    sensorFuel:'SF-2113',
+    status:'normal'
   },
 ];

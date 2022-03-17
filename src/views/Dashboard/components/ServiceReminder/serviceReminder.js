@@ -1,5 +1,5 @@
 import React from 'react';
-import { Doughnut, Pie,Radar,Polar } from 'react-chartjs-2';
+import { Pie } from 'react-chartjs-2';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles, useTheme } from '@material-ui/styles';
@@ -11,14 +11,9 @@ import {
   Divider,
   Typography
 } from '@material-ui/core';
-import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import RefreshIcon from '@material-ui/icons/Refresh';
 // BatteryAlertTwoTone
-import Build from '@material-ui/icons/Build';
-import Check from '@material-ui/icons/Check';
-import TabletMacIcon from '@material-ui/icons/TabletMac';
-import { BurstMode, LaptopChromebook, PieChart, PieChartRounded, TimelineSharp, Timer } from '@material-ui/icons';
+import { TimelineSharp, Timer } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
   root: {

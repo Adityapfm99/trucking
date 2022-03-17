@@ -5,31 +5,31 @@ export default [
   {
     id: uuid(),
     name: 'Driver A',
-    total: '5000 Kg',
+    total: '8870 Kg',
     updatedAt: moment().subtract(2, 'hours')
   },
   {
     id: uuid(),
     name: 'Driver B',
-    total: '3200 Kg',
+    total: '7900 Kg',
     updatedAt: moment().subtract(2, 'hours')
   },
   {
     id: uuid(),
     name: 'Driver C',
-    total: '3200 Kg',
+    total: '8250 Kg',
     updatedAt: moment().subtract(3, 'hours')
   },
   {
     id: uuid(),
     name: 'Driver D',
-    total: '4200 Kg',
+    total: '8105 Kg',
     updatedAt: moment().subtract(5, 'hours')
   },
   {
     id: uuid(),
     name: 'Driver E',
-    total: '3200 Kg',
+    total: '8710 Kg',
     updatedAt: moment().subtract(9, 'hours')
   }
 ];

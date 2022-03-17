@@ -8,12 +8,8 @@ export const data = {
       borderColor: 'rgb(54, 162, 235)',
       data: [500, 100, 450, 200, 120, 410, 220],
       fill: true,
-    },
-    {
-      label: 'Last year',
-      backgroundColor: palette.neutral,
-      data: [11, 20, 12, 29, 30, 25, 13]
     }
+    
   ]
 };
 
@@ -22,7 +18,7 @@ export const options = {
   maintainAspectRatio: false,
   animation: false,
   legend: { display: true },
-  cornerRadius: 10,
+  cornerRadius: 1,
   tooltips: {
     enabled: true,
     mode: 'index',

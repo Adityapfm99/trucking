@@ -19,13 +19,25 @@ import {
 } from '@material-ui/core';
 
 import { GpsFixed } from '@material-ui/icons';
+import { Videocam } from '@material-ui/icons';
 import { Popup } from '../../..';
+import VideoModal from '../VideoModal';
+import { red } from '@material-ui/core/colors';
+
 
 const useStyles = makeStyles(theme => ({
   root: {},
   content: {
     padding: 0
   },
+  overrides: {
+    MuiBackdrop: {
+      root: {
+        backgroundColor: 'rgba(0,0,0,0.14)'
+      }
+    }
+  },
+
   inner: {
     minWidth: 1050
   },
@@ -47,7 +59,7 @@ const useStyles = makeStyles(theme => ({
     height: 800,
     marginTop: '10%',
     marginLeft: '30%',
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: red,
     zIndex: theme.zIndex.drawer + 1
   },
   paper: {
@@ -62,12 +74,10 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2, 4, 3),
     zIndex: theme.zIndex.drawer + 1
   },
-  root:{
-    backgroundColor:'transparent' // Outside of the Backdrop
-  },
- 
+  root: {
+    backgroundColor: 'transparent' // Outside of the Backdrop
+  }
 }));
-
 
 const UsersTable = props => {
   const { className, users, ...rest } = props;
@@ -89,10 +99,19 @@ const UsersTable = props => {
     history.push('/dashboard');
   };
 
+  const statusColors = {
+    normal: 'success',
+    pending: 'info',
+    maintenance: 'danger'
+  };
+
   const handlePageChange = (event, page) => {
     setPage(page);
   };
   const togglePopup = () => {
+    setIsOpen(!isOpen);
+  };
+  const toggleLive = () => {
     setIsOpen(!isOpen);
   };
 
@@ -113,7 +132,8 @@ const UsersTable = props => {
                   <TableCell>FIRST SYNC</TableCell>
                   <TableCell>DURATION(minutes)</TableCell>
                   <TableCell>LAST SYNC</TableCell>
-                  <TableCell>LIVE TRACKING </TableCell>
+                  <TableCell>TRACKING </TableCell>
+                  <TableCell>VIDEO CAM </TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -125,28 +145,38 @@ const UsersTable = props => {
                     <TableCell>{user.Duration}</TableCell>
                     <TableCell>{user.LastSync}</TableCell>
                     <TableCell>
-                      <GpsFixed color="primary" onClick={togglePopup}>Open</GpsFixed>
-                      <Modal 
-                      className={classes.root}
+                      <GpsFixed color="primary" onClick={togglePopup}>
+                        Open
+                      </GpsFixed>
+                      <Modal
+                        className={classes.root}
                         open={isOpen}
                         onClose={handleClose}
                         closeAfterTransition
-                        BackdropComponent={Backdrop}
-                       >
-                          <div className={classes.modal}>
-                          <Popup ></Popup>
+                        BackdropComponent={Backdrop}>
+                        <div className={classes.modal}>
+                          <Popup></Popup>
                         </div>
                       </Modal>
-                      {/* <Link
-                        href="/popup"
-                        className={classes.link}
-                        target="/popup">
-                        <GpsFixed />
-                      </Link> */}
+                    </TableCell>
+                    <TableCell>
+                      <Videocam color="primary" onClick={toggleLive}>
+                        Open
+                      </Videocam>
+
+                      <Modal
+                        className={classes.root}
+                        open={isOpen}
+                        onClose={handleClose}
+                        closeAfterTransition
+                        BackdropComponent={Backdrop}>
+                        <div className={classes.modal}>
+                          <VideoModal></VideoModal>
+                        </div>
+                      </Modal>
                     </TableCell>
                   </TableRow>
                 ))}
-                
               </TableBody>
             </Table>
           </div>

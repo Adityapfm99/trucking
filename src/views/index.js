@@ -16,5 +16,6 @@ export { default as DriverList } from './masterDriver';
 export { default as addVehicle } from './Add Vehicle';
 export { default as addDriver } from './Add Driver';
 export { default as Popup } from './popup';
+export { default as VideoModal } from './MonitoringVehicle/components/VideoModal';
 export { default as Maps } from './Maps';
 

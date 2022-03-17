@@ -23,10 +23,12 @@ import {
   // addMaintenance as AddMaintenance,
   addDriver as AddDriverView,
   Popup as Popup,
+  // VideoModal as VideoModal,
   Maps as Maps,
   ServiceReminder,
 } from './views';
 import AddMaintenance from './views/Add Maintenance';
+import { videoModal } from './views/MonitoringVehicle/components';
 
 const Routes = () => {
   return (
@@ -77,6 +79,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/popup"
+      />
+       <RouteWithLayout
+        component={videoModal}
+        exact
+        layout={MainLayout}
+        path="/videoModal"
       />
       <RouteWithLayout
         component={TypographyView}
